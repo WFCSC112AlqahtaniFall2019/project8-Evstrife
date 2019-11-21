@@ -19,9 +19,9 @@ ofstream outQueue;
 ofstream outPriority;
 //
 datafile.open ("../Pokemon.csv");
-outStack.open("Stack.txt");
-outQueue.open("Queue.txt");
-outPriority.open("PriorityQueue.txt");
+outStack.open("Stacked.txt");
+outQueue.open("Queued.txt");
+outPriority.open("Sorted.txt");
 
 if(!datafile.is_open()){
 cout<<"Input file did not open"<<endl;
@@ -78,7 +78,6 @@ Queue.push(info);
 //push into the queue
 priorityQueue.push(info);
 //put data in to the sorted list
-other=info;
 }
 
 cout<<"Writing data in stack inserted at head into Stack.txt"<<endl;
